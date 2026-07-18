@@ -1,3 +1,5 @@
+# Carly's Clippers — analysing salon pricing and revenue data across three aligned lists.
+
 hairstyles = ["bouffant", "pixie", "dreadlocks", "crew", "bowl", "bob", "mohawk", "flattop"]
 
 prices = [30, 25, 40, 20, 20, 35, 50, 35]
