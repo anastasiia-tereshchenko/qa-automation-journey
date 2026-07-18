@@ -14,6 +14,3 @@ Welcome to my QA automation journey. After 8 years of experience in Manual QA, I
 *   `pytest/`: Implementation of unit tests and test automation fundamentals.
 *   `api-testing/`: API automation suites (Requests library).
 *   `ui-tests/`: UI automation projects (Selenium/Playwright).
-
----
-*Created by Anastasiia Tereshchenko | Manual QA turned Automation Engineer*
