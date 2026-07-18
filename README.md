@@ -1,14 +1,28 @@
-# QA Automation Portfolio
+# Quality Assurance Portfolio & Technical Growth
 
-Welcome to my QA automation journey. After 8 years of experience in Manual QA, I am currently transitioning into Automation to streamline testing processes and improve efficiency. This repository serves as a collection of my learning progress, technical exercises, and future automation projects.
+QA Engineer with 8 years of experience across iGaming, Fintech, and Banking sectors. I focus on bridging the gap between business requirements and high-quality software delivery. I am currently expanding my skill set from comprehensive manual and exploratory testing into Test Automation to build more efficient and scalable testing processes.
 
-## Tech Stack
-*   **Language:** Python
-*   **Testing Frameworks:** `pytest`
-*   **Testing Domains:** API Testing, UI Automation
+**Location:** Relocating to London, UK, October 2026 · Right to work in the UK
 
-## Structure
-*   `python-basics/`: Foundational Python scripts covering control flow, data structures, and loops.
-*   `pytest/`: Implementation of unit tests and test automation fundamentals.
-*   `api-testing/`: API automation suites (Requests library).
-*   `ui-tests/`: UI automation projects (Selenium/Playwright).
+## Professional Highlights
+*   **Project Ownership:** Experienced in full-cycle testing, including requirements analysis, design review, and release management (e.g., led the end-to-end testing strategy for a major Casino platform redesign).
+*   **Domain Expertise:** Proven track record in high-stakes environments, including iGaming, Fintech, and Banking, across both Mobile Native and Web platforms.
+*   **Methodology & Tooling:** Proficient in Agile/Scrum workflows. Experienced in using Jira/Confluence for project tracking and Zephyr for maintaining structured test documentation.
+*   **Testing Core:** Extensive experience in biweekly web regressions, mobile app exploratory testing, and acceptance testing.
+
+## Technical Skills
+
+| Category | Tools & Technologies |
+| :--- | :--- |
+| **Automation** | Python (In-progress), Pytest (Starting) |
+| **API & Web** | Postman, Chrome DevTools (Daily usage) |
+| **Database** | SQL |
+| **QA Management** | Jira, Confluence, Zephyr |
+
+## Portfolio Directory
+This repository tracks my transition into Automation Engineering, showcasing my growth from core logic to full-scale framework development.
+
+*   [**`python-basics/`**](python-basics/): Foundational Python scripts covering control flow, loops, and data structures.
+
+---
+*I am actively seeking roles that value both strong manual testing fundamentals and a clear growth trajectory toward automation.*
