@@ -1,5 +1,3 @@
-# qa-automation-journey
-
 # QA Automation Portfolio
 
 Welcome to my QA automation journey. After 8 years of experience in Manual QA, I am currently transitioning into Automation to streamline testing processes and improve efficiency. This repository serves as a collection of my learning progress, technical exercises, and future automation projects.
