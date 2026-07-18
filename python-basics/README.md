@@ -13,6 +13,7 @@ Each exercise here builds a foundation I'll use in automation — control flow f
 ## Contents
 *   **Magic 8 - Control Flow:** Project demonstrating conditional logic (`if`, `elif`, `else`) and input handling. 
 *   **Carly's Clippers - Loops:** Implementation of loops and List Comprehensions.
+*   **Physics Class - Functions:** Functions with parameters, return values, and default arguments for physics calculations.
 
 **Next: pytest** — applying these fundamentals to write automated tests. 
   
