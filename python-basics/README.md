@@ -14,4 +14,5 @@ Each exercise here builds a foundation I'll use in automation — control flow f
 *   **Magic 8 - Control Flow:** Project demonstrating conditional logic (`if`, `elif`, `else`) and input handling. 
 *   **Carly's Clippers - Loops:** Implementation of loops and List Comprehensions.
 
-* **Next:** pytest — turning this logic into automated tests.*
+**Next: pytest** — applying these fundamentals to write automated tests. 
+  
