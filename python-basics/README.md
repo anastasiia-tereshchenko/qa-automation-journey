@@ -14,6 +14,7 @@ Each exercise here builds a foundation I'll use in automation — control flow f
 *   **Magic 8 - Control Flow:** Project demonstrating conditional logic (`if`, `elif`, `else`) and input handling. 
 *   **Carly's Clippers - Loops:** Implementation of loops and List Comprehensions.
 *   **Physics Class - Functions:** Functions with parameters, return values, and default arguments for physics calculations.
+*   **Pythonagrams - Dictionaries:** Word-scoring game using dictionaries, nested loops, and a scoring function.
 
 **Next: pytest** — applying these fundamentals to write automated tests. 
   
