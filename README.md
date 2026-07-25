@@ -23,6 +23,7 @@ QA Engineer with 8 years of experience across iGaming, Fintech, and Banking sect
 This repository tracks my transition into Automation Engineering, showcasing my growth from core logic to full-scale framework development.
 
 *   [**`python-basics/`**](python-basics/): Foundational Python scripts covering control flow, loops, and data structures.
+*   [**`pytest/`**](pytest/): Transitioning basic logic into automated unit tests.
 
 ---
 *I am actively seeking roles that value both strong manual testing fundamentals and a clear growth trajectory toward automation.*
