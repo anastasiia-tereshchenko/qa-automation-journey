@@ -1,4 +1,5 @@
 from physics_class import f_to_c, c_to_f, get_force, get_energy, get_work
+import pytest
 from pytest import approx
 
 
@@ -12,14 +13,14 @@ def test_f_to_c_0():
     assert f_to_c(0) == approx(-17.78, abs=0.01)
 
 
-def test_c_to_f_boiling():
-    assert c_to_f(100) == 212
+@pytest.mark.parametrize("celsius, expected", [
+    (100, 212),
+    (-40, -40),
+    (0, 32),
+])
 
-def test_c_to_f_40():
-    assert c_to_f(-40) == -40
-
-def test_c_to_f_zero():
-    assert c_to_f(0) == 32          
+def test_c_to_f(celsius, expected):
+    assert c_to_f(celsius) == expected     
 
 
 def test_get_force_0mass():
