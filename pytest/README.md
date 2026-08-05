@@ -6,5 +6,5 @@ Writing unit tests immediately surfaced behaviour worth fixing:
 *   **Scope of Testing:** I deliberately chose not to test physically impossible inputs (such as negative mass), focusing my tests instead on behavior and edge cases the functions are actually designed to support.
 *   **Floating-Point Approximations:** Handled precision limits in temperature conversions using `pytest.approx()` to ensure reliable assertions.
 ## Contents
-*   **`physics_class.py` & `test_physics_class.py`:** Validates mathematical functions for temperature, force, energy, and work calculations under various conditions (zero mass, negative acceleration, custom constants).
+*   **`physics_class.py` & `test_physics_class.py`:** Validates mathematical functions for temperature, force, energy, and work calculations under various conditions (zero mass, negative acceleration, custom constants). Refactored repetitive tests into parametrized (data-driven) tests.
 *   **`scoring.py` & `test_scoring.py`:** Tests word score calculations, empty string edge cases, and lowercase input handling.
