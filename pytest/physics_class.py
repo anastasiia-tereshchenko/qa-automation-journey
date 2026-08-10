@@ -18,6 +18,8 @@ c0_in_fahrenheit = c_to_f(0)
 print(c0_in_fahrenheit)
 
 def get_force(mass, acceleration):
+  if mass < 0:
+    raise ValueError("Mass cannot be negative")
   force = mass * acceleration
   return force
 
