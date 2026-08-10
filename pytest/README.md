@@ -3,7 +3,7 @@ This folder contains unit tests written using the `pytest` framework. I am using
 ## QA-Driven Insights & Bug Fixes
 Writing unit tests immediately surfaced behavior worth fixing:
 *   **Case Sensitivity Bug:** Testing `score_word` initially revealed that lowercase words scored zero because the dictionary keys were uppercase. I caught this behavior through testing and fixed it by adding `.upper()` to handle input normalization.
-*   **Scope of Testing:** I deliberately chose not to test physically impossible inputs (such as negative mass), focusing my tests instead on behavior and edge cases the functions are actually designed to support.
+*  **Scope of Testing & Negative Cases:** I initially left physically impossible inputs (such as negative mass) untested, since the functions had no validation. Revisiting this, I decided the calculation itself should reject invalid input, so I added a guard clause to get_force and covered it with pytest.raises.
 *   **Data-Driven Tests:** Refactored repetitive tests into parametrized ones, keeping separate named tests where the name itself documented the case.
 *   **Floating-Point Approximations:** Handled precision limits in temperature conversions using `pytest.approx()` to ensure reliable assertions.
 ## Contents
