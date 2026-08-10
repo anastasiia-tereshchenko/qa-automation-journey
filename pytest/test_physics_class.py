@@ -32,6 +32,9 @@ def test_c_to_f(celsius, expected):
 def test_get_force(mass, acceleration, expected):
     assert get_force(mass, acceleration) == expected   
 
+def test_get_force_negative_mass():
+    with pytest.raises(ValueError):
+        get_force(-5, 10)
 
 def test_get_energy_positive():
     assert get_energy(1) == 90000000000000000
