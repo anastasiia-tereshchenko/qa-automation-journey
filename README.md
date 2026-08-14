@@ -1,6 +1,6 @@
 # Quality Assurance Portfolio & Technical Growth
 
-QA Engineer with 8 years of experience across iGaming, Fintech, and Banking sectors. I focus on bridging the gap between business requirements and high-quality software delivery. I am currently expanding my skill set from comprehensive manual and exploratory testing into Test Automation to build more efficient and scalable testing processes.
+QA Engineer with 7+ years of experience across iGaming, Fintech, and Banking sectors. I focus on bridging the gap between business requirements and high-quality software delivery. I am currently expanding my skill set from comprehensive manual and exploratory testing into Test Automation to build more efficient and scalable testing processes.
 
 **Location:** Relocating to London, UK, October 2026 · Right to work in the UK
 
@@ -14,8 +14,8 @@ QA Engineer with 8 years of experience across iGaming, Fintech, and Banking sect
 
 | Category | Tools & Technologies |
 | :--- | :--- |
-| **Automation** | Python (In-progress), Pytest (Starting) |
-| **API & Web** | Postman, Chrome DevTools (Daily usage) |
+| **Automation** | Python & pytest (in progress) |
+| **API & Web** | Postman, API testing (CRUD, negative testing, chained requests), Chrome DevTools (Daily usage) |
 | **Database** | SQL |
 | **QA Management** | Jira, Confluence, Zephyr |
 
@@ -24,6 +24,7 @@ This repository tracks my transition into Automation Engineering, showcasing my 
 
 *   [**`python-basics/`**](python-basics/): Foundational Python scripts covering control flow, loops, and data structures.
 *   [**`pytest/`**](pytest/): Transitioning basic logic into automated unit tests.
+*   [**`api-testing/`**](api-testing/): Postman collections covering a full CRUD lifecycle and negative testing, with chained requests and assertions on response structure.
 
 ---
 *I am actively seeking roles that value both strong manual testing fundamentals and a clear growth trajectory toward automation.*
