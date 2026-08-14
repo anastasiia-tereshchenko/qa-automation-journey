@@ -1,0 +1,175 @@
+{
+  "info": {
+    "_postman_id": "c2777b0d-8187-4587-b829-c405e98a03f4",
+    "name": "Weather API (Open-Meteo)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "19362527"
+  },
+  "item": [
+    {
+      "name": "Get current weather - London",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "pm.test(\"Timezone check\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(jsonData.timezone).to.eql(\"GMT\");",
+              "});",
+              "",
+              "pm.test(\"Temperature unit\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(jsonData.current_units.temperature_2m).to.eql(\"°C\");",
+              "});        ",
+              "",
+              "pm.test(\"Temperature is a number\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(jsonData.current.temperature_2m).to.be.a(\"number\");",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.open-meteo.com/v1/forecast?latitude=51.5072&longitude=-0.1276&current=temperature_2m,relative_humidity_2m,wind_speed_10m",
+          "protocol": "https",
+          "host": [
+            "api",
+            "open-meteo",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "forecast"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "51.5072"
+            },
+            {
+              "key": "longitude",
+              "value": "-0.1276"
+            },
+            {
+              "key": "current",
+              "value": "temperature_2m,relative_humidity_2m,wind_speed_10m"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Invalid latitude (400)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 400\", function () {",
+              "    pm.response.to.have.status(400);",
+              "});",
+              "",
+              "pm.test(\"Error is true\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(jsonData.error).to.eql(true);",
+              "});",
+              "",
+              "pm.test(\"Reason mentions latitude\", function () {",
+              "        var jsonData = pm.response.json();   ",
+              "    pm.expect(jsonData.reason).to.include(\"Latitude\");",
+              "});",
+              "",
+              "pm.test(\"Body is correct\", function () {",
+              "    pm.response.to.have.body(\"response_body_string\");",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.open-meteo.com/v1/forecast?latitude=999&longitude=-0.1276&current=temperature_2m,relative_humidity_2m,wind_speed_10m",
+          "protocol": "https",
+          "host": [
+            "api",
+            "open-meteo",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "forecast"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "999"
+            },
+            {
+              "key": "longitude",
+              "value": "-0.1276"
+            },
+            {
+              "key": "current",
+              "value": "temperature_2m,relative_humidity_2m,wind_speed_10m"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": ""
+    }
+  ]
+}
